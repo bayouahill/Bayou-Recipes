@@ -12,6 +12,8 @@ RecipeSite/
 ├── chicken-sausage-jambalaya.html    # Sister Amos' Chicken Sausage Jambalaya
 ├── chicken-gyros.html                # Chicken Gyros
 ├── red-beans-and-rice.html           # New Orleans-Style Red Beans and Rice
+├── crockpot-creamy-chicken-pasta.html # Crockpot Creamy Chicken Pasta
+├── classic-creole-gumbo.html         # Classic Creole Gumbo
 ├── css/
 │   └── style.css                     # All site styles (responsive: mobile, tablet, desktop)
 ├── js/

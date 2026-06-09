@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classic Creole Gumbo — Recipe Site</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/scaler.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Bayou Recipes</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="recipe-page" data-base-servings="6">
+    <h1>Classic Creole Gumbo</h1>
+
+    <div class="recipe-meta">
+      <span>Prep: 30 min</span>
+      <span>Cook: 2 hrs</span>
+      <span>Serves: 6</span>
+    </div>
+
+    <div class="scaler">
+      <span class="scaler-label">Servings:</span>
+      <button class="scaler-btn" id="scaler-decrease" aria-label="Decrease servings">−</button>
+      <span id="serving-count">6</span>
+      <button class="scaler-btn" id="scaler-increase" aria-label="Increase servings">+</button>
+    </div>
+
+    <a href="Classic_Creole_Gumbo.pdf" download class="btn-download">⬇ Download PDF</a>
+
+    <img src="images/gumbo.jpg" alt="Classic Creole Gumbo" class="recipe-hero" />
+
+    <p class="recipe-description">"The crown jewel of Louisiana cuisine. A deeply complex, rich stew built on a dark mahogany roux, packed with the Holy Trinity, spicy Andouille sausage, tender chicken, and plump shrimp."</p>
+
+    <section class="recipe-body">
+      <div class="ingredients">
+        <h2>Ingredients</h2>
+        <h3>The Roux</h3>
+        <ul>
+          <li><span class="amount" data-base="0.5">½</span> cup vegetable oil or lard</li>
+          <li><span class="amount" data-base="0.5">½</span> cup all-purpose flour</li>
+        </ul>
+        <h3>Proteins</h3>
+        <ul>
+          <li><span class="amount" data-base="1">1</span> lb Andouille sausage, sliced into ½-inch rounds</li>
+          <li><span class="amount" data-base="1">1</span> lb boneless chicken thighs, cut into bite-sized pieces</li>
+          <li><span class="amount" data-base="1">1</span> lb medium shrimp, peeled and deveined</li>
+        </ul>
+        <h3>Holy Trinity &amp; Aromatics</h3>
+        <ul>
+          <li><span class="amount" data-base="1">1</span> large yellow onion, diced</li>
+          <li><span class="amount" data-base="1">1</span> green bell pepper, diced</li>
+          <li><span class="amount" data-base="3">3</span> ribs celery, diced</li>
+          <li><span class="amount" data-base="4">4</span> cloves garlic, minced</li>
+          <li><span class="amount" data-base="2">2</span> cups fresh okra, sliced (or frozen)</li>
+        </ul>
+        <h3>Simmer &amp; Seasonings</h3>
+        <ul>
+          <li><span class="amount" data-base="6">6</span> cups chicken or seafood stock</li>
+          <li><span class="amount" data-base="14">14</span> oz can crushed tomatoes</li>
+          <li><span class="amount" data-base="1">1</span> tbsp Cajun/Creole seasoning</li>
+          <li><span class="amount" data-base="2">2</span> dried bay leaves</li>
+          <li><span class="amount" data-base="1">1</span> tsp Worcestershire sauce</li>
+          <li>Kosher salt and cayenne pepper to taste</li>
+          <li>Filé powder (optional, for serving)</li>
+        </ul>
+        <h3>For Serving</h3>
+        <ul>
+          <li>Cooked long-grain white rice</li>
+          <li>Fresh scallions, thinly sliced</li>
+        </ul>
+      </div>
+
+      <div class="instructions">
+        <h2>Instructions</h2>
+        <ol>
+          <li><strong>Sear the meats:</strong> In a large, heavy Dutch oven over medium-high heat, add 1 tbsp of oil. Brown the sliced Andouille until crisp and rendered (5–7 minutes). Remove with a slotted spoon. Season the chicken with a pinch of Creole seasoning, sear until browned on all sides, then remove and set aside with the sausage.</li>
+          <li><strong>Build the dark roux:</strong> Reduce heat to medium-low. Add the remaining oil and flour to the pot. Stir constantly and without stopping for 20–30 minutes until the roux transforms into a deep, dark mahogany color resembling melted dark chocolate. Do not let it burn.</li>
+          <li><strong>Soften the Trinity:</strong> Immediately add the diced onion, bell pepper, and celery into the hot roux — the vegetables will stop it cooking further. Stir well and cook 5–7 minutes until softened. Add garlic and okra, stirring for 2 more minutes.</li>
+          <li><strong>Build the stew:</strong> Slowly whisk in the stock a little at a time to prevent clumping. Add the crushed tomatoes, Worcestershire sauce, bay leaves, and Creole seasoning. Return the sausage and chicken (with any collected juices) to the pot. Bring to a boil, then reduce heat to low.</li>
+          <li><strong>Low and slow simmer:</strong> Simmer uncovered for 1 to 1½ hours, stirring occasionally. The okra and roux will naturally thicken the gumbo. Skim any excess oil from the surface. Taste and adjust salt and cayenne as desired.</li>
+          <li><strong>Finish with seafood:</strong> Drop the shrimp into the gumbo during the final 5 minutes of cooking. Simmer just until they turn pink and opaque. Turn off the heat and discard the bay leaves.</li>
+          <li><strong>Plate and garnish:</strong> Spoon a mound of warm white rice into the center of a wide bowl. Ladle gumbo heavily around the rice. Garnish with sliced scallions and a pinch of filé powder if desired.</li>
+        </ol>
+
+        <h2>The Sacred Roux Rule</h2>
+        <ul>
+          <li><strong>Patience wins:</strong> Keep heat controlled and your spoon moving constantly. If you see black flecks or smell a sharp burnt odor, your roux has scorched — discard it and start over. A burnt roux will taint the entire pot.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 RecipeSite</p>
+  </footer>
+</body>
+</html>
