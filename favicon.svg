@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Tail fan -->
+  <ellipse cx="10" cy="32" rx="7" ry="4" fill="#AA210F" transform="rotate(-30 10 32)"/>
+  <ellipse cx="10" cy="32" rx="7" ry="4" fill="#AA210F"/>
+  <ellipse cx="10" cy="32" rx="7" ry="4" fill="#AA210F" transform="rotate(30 10 32)"/>
+
+  <!-- Body -->
+  <ellipse cx="32" cy="32" rx="16" ry="10" fill="#C0321A"/>
+
+  <!-- Shell segments -->
+  <line x1="22" y1="28" x2="22" y2="36" stroke="#AA210F" stroke-width="1.2"/>
+  <line x1="28" y1="26" x2="28" y2="38" stroke="#AA210F" stroke-width="1.2"/>
+  <line x1="34" y1="26" x2="34" y2="38" stroke="#AA210F" stroke-width="1.2"/>
+  <line x1="40" y1="28" x2="40" y2="36" stroke="#AA210F" stroke-width="1.2"/>
+
+  <!-- Head -->
+  <ellipse cx="50" cy="32" rx="8" ry="7" fill="#D08856"/>
+
+  <!-- Eyes -->
+  <circle cx="53" cy="28" r="2" fill="#41403C"/>
+  <circle cx="53" cy="28" r="0.8" fill="#fff"/>
+
+  <!-- Antennae -->
+  <line x1="55" y1="26" x2="63" y2="16" stroke="#41403C" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="54" y1="25" x2="60" y2="14" stroke="#41403C" stroke-width="1" stroke-linecap="round"/>
+
+  <!-- Claws (top) -->
+  <line x1="50" y1="26" x2="44" y2="18" stroke="#C0321A" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="42" cy="16" rx="5" ry="3" fill="#C0321A" transform="rotate(-40 42 16)"/>
+
+  <!-- Claws (bottom) -->
+  <line x1="50" y1="38" x2="44" y2="46" stroke="#C0321A" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="42" cy="48" rx="5" ry="3" fill="#C0321A" transform="rotate(40 42 48)"/>
+
+  <!-- Legs (top) -->
+  <line x1="36" y1="24" x2="34" y2="17" stroke="#C0321A" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="30" y1="24" x2="27" y2="17" stroke="#C0321A" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="24" y1="26" x2="20" y2="20" stroke="#C0321A" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Legs (bottom) -->
+  <line x1="36" y1="40" x2="34" y2="47" stroke="#C0321A" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="30" y1="40" x2="27" y2="47" stroke="#C0321A" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="24" y1="38" x2="20" y2="44" stroke="#C0321A" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

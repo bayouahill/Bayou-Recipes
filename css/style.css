@@ -193,6 +193,62 @@ footer {
   margin-top: 5rem;
 }
 
+/* ── Search bar ── */
+.search-wrap {
+  margin: 1.5rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+#recipe-search {
+  width: 100%;
+  max-width: 480px;
+  padding: 0.75rem 1.2rem;
+  border: 2px solid #D08856;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #fff;
+  color: #41403C;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+#recipe-search:focus { border-color: #AA210F; box-shadow: 0 0 0 3px rgba(170,33,15,0.1); }
+#no-results { display: none; color: #AA210F; font-style: italic; font-size: 0.95rem; }
+
+/* ── Serving scaler ── */
+.scaler {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #fff;
+  border: 2px solid #D08856;
+  border-radius: 2rem;
+  padding: 0.4rem 1rem;
+  margin: 0.75rem 0 1.5rem;
+  font-size: 0.95rem;
+}
+.scaler-label { color: #41403C; font-weight: bold; }
+.scaler-btn {
+  background: #AA210F;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scaler-btn:hover:not(:disabled) { background: #8a1a0c; }
+.scaler-btn:disabled { background: #ccc; cursor: not-allowed; }
+#serving-count { min-width: 1.5rem; text-align: center; font-size: 1.1rem; font-weight: bold; color: #AA210F; }
+
 /* ── Responsive — Tablet (≤900px) ── */
 @media (max-width: 900px) {
   main { margin: 2rem auto; padding: 0 1.5rem; }

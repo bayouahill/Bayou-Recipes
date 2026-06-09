@@ -4,12 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Garlic Parmesan Chicken Meatballs with Orzo — Recipe Site</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="css/style.css" />
+  <script src="js/scaler.js" defer></script>
 </head>
 <body>
   <header>
     <nav>
-      <a href="index.html" class="logo">RecipeSite</a>
+      <a href="index.html" class="logo">Bayou Recipes</a>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="recipes.html">Recipes</a></li>
@@ -17,13 +19,20 @@
     </nav>
   </header>
 
-  <main class="recipe-page">
+  <main class="recipe-page" data-base-servings="4">
     <h1>Garlic Parmesan Chicken Meatballs with Orzo</h1>
 
     <div class="recipe-meta">
       <span>Prep: 10 min</span>
       <span>Cook: 35 min</span>
       <span>Serves: 4</span>
+    </div>
+
+    <div class="scaler">
+      <span class="scaler-label">Servings:</span>
+      <button class="scaler-btn" id="scaler-decrease" aria-label="Decrease servings">−</button>
+      <span id="serving-count">4</span>
+      <button class="scaler-btn" id="scaler-increase" aria-label="Increase servings">+</button>
     </div>
 
     <a href="Garlic_Parmesan_Chicken_Meatballs_with_Orzo.pdf" download class="btn-download">⬇ Download PDF</a>
@@ -37,34 +46,34 @@
         <h2>Ingredients</h2>
         <h3>Meatballs</h3>
         <ul>
-          <li>500g chicken mince</li>
-          <li>80g fine breadcrumbs</li>
-          <li>30g grated Parmesan</li>
-          <li>1 egg</li>
-          <li>1 tsp Dijon mustard</li>
-          <li>1 tsp honey</li>
-          <li>1 tsp garlic granules</li>
-          <li>1 tsp paprika</li>
-          <li>1 tsp oregano</li>
-          <li>Juice of ½ lemon</li>
-          <li>1 bulb roasted garlic (or 1 tbsp roasted garlic paste)</li>
-          <li>5g fresh parsley, finely chopped</li>
-          <li>1 tsp olive oil (+ 1 tbsp for frying)</li>
+          <li><span class="amount" data-base="500">500</span>g chicken mince</li>
+          <li><span class="amount" data-base="80">80</span>g fine breadcrumbs</li>
+          <li><span class="amount" data-base="30">30</span>g grated Parmesan</li>
+          <li><span class="amount" data-base="1">1</span> egg</li>
+          <li><span class="amount" data-base="1">1</span> tsp Dijon mustard</li>
+          <li><span class="amount" data-base="1">1</span> tsp honey</li>
+          <li><span class="amount" data-base="1">1</span> tsp garlic granules</li>
+          <li><span class="amount" data-base="1">1</span> tsp paprika</li>
+          <li><span class="amount" data-base="1">1</span> tsp oregano</li>
+          <li>Juice of <span class="amount" data-base="0.5">½</span> lemon</li>
+          <li><span class="amount" data-base="1">1</span> bulb roasted garlic (or <span class="amount" data-base="1">1</span> tbsp roasted garlic paste)</li>
+          <li><span class="amount" data-base="5">5</span>g fresh parsley, finely chopped</li>
+          <li><span class="amount" data-base="1">1</span> tsp olive oil (+ <span class="amount" data-base="1">1</span> tbsp for frying)</li>
         </ul>
         <h3>Sauce &amp; Orzo</h3>
         <ul>
-          <li>300g orzo</li>
-          <li>1 shallot, diced</li>
-          <li>3 cloves garlic, minced</li>
-          <li>100ml white wine (optional)</li>
-          <li>300ml double cream</li>
-          <li>600ml chicken stock</li>
-          <li>½ tsp Dijon mustard</li>
-          <li>1 tsp paprika</li>
-          <li>1 tsp oregano</li>
-          <li>30g Parmesan, grated</li>
-          <li>5g fresh parsley, chopped</li>
-          <li>Zest of ½ lemon</li>
+          <li><span class="amount" data-base="300">300</span>g orzo</li>
+          <li><span class="amount" data-base="1">1</span> shallot, diced</li>
+          <li><span class="amount" data-base="3">3</span> cloves garlic, minced</li>
+          <li><span class="amount" data-base="100">100</span>ml white wine (optional)</li>
+          <li><span class="amount" data-base="300">300</span>ml double cream</li>
+          <li><span class="amount" data-base="600">600</span>ml chicken stock</li>
+          <li><span class="amount" data-base="0.5">½</span> tsp Dijon mustard</li>
+          <li><span class="amount" data-base="1">1</span> tsp paprika</li>
+          <li><span class="amount" data-base="1">1</span> tsp oregano</li>
+          <li><span class="amount" data-base="30">30</span>g Parmesan, grated</li>
+          <li><span class="amount" data-base="5">5</span>g fresh parsley, chopped</li>
+          <li>Zest of <span class="amount" data-base="0.5">½</span> lemon</li>
           <li>Salt and pepper to taste</li>
         </ul>
       </div>

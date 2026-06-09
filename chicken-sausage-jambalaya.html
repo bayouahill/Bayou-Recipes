@@ -4,12 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sister Amos' Chicken Sausage Jambalaya — Recipe Site</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="css/style.css" />
+  <script src="js/scaler.js" defer></script>
 </head>
 <body>
   <header>
     <nav>
-      <a href="index.html" class="logo">RecipeSite</a>
+      <a href="index.html" class="logo">Bayou Recipes</a>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="recipes.html">Recipes</a></li>
@@ -17,11 +19,18 @@
     </nav>
   </header>
 
-  <main class="recipe-page">
+  <main class="recipe-page" data-base-servings="20">
     <h1>Sister Amos' Chicken Sausage Jambalaya</h1>
 
     <div class="recipe-meta">
       <span>Serves: 20</span>
+    </div>
+
+    <div class="scaler">
+      <span class="scaler-label">Servings:</span>
+      <button class="scaler-btn" id="scaler-decrease" aria-label="Decrease servings">−</button>
+      <span id="serving-count">20</span>
+      <button class="scaler-btn" id="scaler-increase" aria-label="Increase servings">+</button>
     </div>
 
     <a href="Sister_Amos_Chicken_Sausage_Jambalaya.pdf" download class="btn-download">⬇ Download PDF</a>
@@ -34,23 +43,23 @@
       <div class="ingredients">
         <h2>Ingredients</h2>
         <ul>
-          <li>3 large onions, finely chopped</li>
-          <li>10 green onions, chopped</li>
-          <li>½ bunch parsley, chopped</li>
-          <li>6 large cloves garlic, chopped</li>
-          <li>4 chicken breasts, cut in cubes</li>
-          <li>12 chicken wings or 24 wing pieces</li>
-          <li>3 lbs sausage (Conecuh Smoked Sausage)</li>
-          <li>5½ cups Mahatma Long Grain rice, uncooked</li>
-          <li>9½ cups chicken broth</li>
-          <li>2 tbsp Kitchen Bouquet Browning &amp; Seasoning Sauce</li>
-          <li>3 tsp Better Than Bouillon Base or chicken bouillon cubes, crushed</li>
-          <li>1 lb medium shrimp plus 1 tsp seasoning (optional)</li>
-          <li>Tony Chachere's Creole Seasoning (4–6 tsp)</li>
-          <li>Garlic powder</li>
+          <li><span class="amount" data-base="3">3</span> large onions, finely chopped</li>
+          <li><span class="amount" data-base="10">10</span> green onions, chopped</li>
+          <li><span class="amount" data-base="0.5">½</span> bunch parsley, chopped</li>
+          <li><span class="amount" data-base="6">6</span> large cloves garlic, chopped</li>
+          <li><span class="amount" data-base="4">4</span> chicken breasts, cut in cubes</li>
+          <li><span class="amount" data-base="12">12</span> chicken wings or <span class="amount" data-base="24">24</span> wing pieces</li>
+          <li><span class="amount" data-base="3">3</span> lbs sausage (Conecuh Smoked Sausage)</li>
+          <li><span class="amount" data-base="5.5">5½</span> cups Mahatma Long Grain rice, uncooked</li>
+          <li><span class="amount" data-base="9.5">9½</span> cups chicken broth</li>
+          <li><span class="amount" data-base="2">2</span> tbsp Kitchen Bouquet Browning &amp; Seasoning Sauce</li>
+          <li><span class="amount" data-base="3">3</span> tsp Better Than Bouillon Base or chicken bouillon cubes, crushed</li>
+          <li><span class="amount" data-base="1">1</span> lb medium shrimp plus <span class="amount" data-base="1">1</span> tsp seasoning (optional)</li>
+          <li>Tony Chachere's Creole Seasoning (4–6 tsp, to taste)</li>
+          <li>Garlic powder, to taste</li>
           <li>Red/cayenne pepper or black pepper to taste</li>
-          <li>1 tsp rosemary</li>
-          <li>2 tsp Italian seasoning</li>
+          <li><span class="amount" data-base="1">1</span> tsp rosemary</li>
+          <li><span class="amount" data-base="2">2</span> tsp Italian seasoning</li>
           <li>Cooking oil</li>
         </ul>
         <p><em>Equipment: 1 large skillet or pot, 1 large 15" roaster</em></p>
@@ -68,7 +77,7 @@
           <li><strong>Season the broth:</strong> Bring to a rapid boil. While waiting, add 4 tsp of Creole seasoning to the water. Taste — keep adding seasoning until the water is slightly too salty (4–6 tsp total). Add black and red pepper to taste.</li>
           <li><strong>Add the meat:</strong> Place chicken, sausage, and shrimp (if using) into the roaster piece by piece to keep unnecessary oils out.</li>
           <li><strong>Add the rice:</strong> Once the water boils, cut the heat to very low and add the raw rice evenly throughout the roaster. Gently push the rice into the broth and off the meat using a spoon. Do not stir.</li>
-          <li><strong>Bake:</strong> Cover and bake in the oven at 350°F for 1 hour. Add up to 15 minutes more if the rice appears too wet in the middle. Cook until rice is done. Serves 20.</li>
+          <li><strong>Bake:</strong> Cover and bake in the oven at 350°F for 1 hour. Add up to 15 minutes more if the rice appears too wet in the middle. Cook until rice is done.</li>
         </ol>
       </div>
     </section>

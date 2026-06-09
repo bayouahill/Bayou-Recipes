@@ -4,12 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Recipes — Recipe Site</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
+<script src="js/search.js" defer></script>
 <body>
   <header>
     <nav>
-      <a href="index.html" class="logo">RecipeSite</a>
+      <a href="index.html" class="logo">Bayou Recipes</a>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="recipes.html">Recipes</a></li>
@@ -19,6 +21,11 @@
 
   <main>
     <h1>All Recipes</h1>
+
+    <div class="search-wrap">
+      <input type="search" id="recipe-search" placeholder="Search recipes…" aria-label="Search recipes" />
+      <span id="no-results">No recipes found.</span>
+    </div>
 
     <div class="card-grid">
       <a href="garlic-parmesan-meatballs.html" class="card">
