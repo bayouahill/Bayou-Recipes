@@ -7,6 +7,8 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+html { scroll-behavior: smooth; }
+
 body {
   font-family: 'Georgia', serif;
   color: #41403C;
@@ -20,7 +22,7 @@ header {
   background: #41403C;
   padding: 1.1rem 2.5rem;
 }
-nav { display: flex; align-items: center; justify-content: space-between; max-width: 1100px; margin: auto; }
+nav { display: flex; align-items: center; justify-content: space-between; }
 .logo { font-size: 1.5rem; font-weight: bold; text-decoration: none; color: #D08856; letter-spacing: 0.05em; }
 nav ul { list-style: none; display: flex; gap: 2rem; }
 nav ul a { text-decoration: none; color: #EDEFEE; font-size: 1rem; transition: color 0.2s; }
@@ -70,6 +72,20 @@ main { max-width: 1100px; margin: 3rem auto; padding: 0 2rem; }
   transition: background 0.25s, transform 0.2s;
 }
 .btn:hover { background: #8a1a0c; transform: translateY(-2px); }
+
+.btn-jump {
+  display: inline-block;
+  margin: 0.75rem 0 0.5rem;
+  padding: 0.55rem 1.5rem;
+  background: transparent;
+  color: #AA210F;
+  border: 2px solid #AA210F;
+  text-decoration: none;
+  border-radius: 2rem;
+  font-size: 0.95rem;
+  transition: background 0.25s, color 0.25s, transform 0.2s;
+}
+.btn-jump:hover { background: #AA210F; color: #fff; transform: translateY(-2px); }
 
 .btn-download {
   display: inline-block;
@@ -193,6 +209,27 @@ footer {
   margin-top: 5rem;
 }
 
+/* ── Ingredient checklist ── */
+.ingredient-label {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.ingredient-check {
+  flex-shrink: 0;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-top: 0.15rem;
+  accent-color: #AA210F;
+  cursor: pointer;
+}
+.ingredients li.checked .ingredient-label {
+  opacity: 0.4;
+  text-decoration: line-through;
+}
+
 /* ── Search bar ── */
 .search-wrap {
   margin: 1.5rem 0 2rem;
@@ -248,6 +285,42 @@ footer {
 .scaler-btn:hover:not(:disabled) { background: #8a1a0c; }
 .scaler-btn:disabled { background: #ccc; cursor: not-allowed; }
 #serving-count { min-width: 1.5rem; text-align: center; font-size: 1.1rem; font-weight: bold; color: #AA210F; }
+
+/* ── Print ── */
+@media print {
+  /* Hide everything that isn't the recipe */
+  header, footer, .scaler, .btn-download, .btn, .search-wrap { display: none !important; }
+
+  body { background: #fff; color: #000; font-size: 11pt; line-height: 1.5; }
+  main { max-width: 100%; margin: 0; padding: 0; }
+
+  /* Recipe hero — keep it but cap the height */
+  .recipe-hero { max-height: 220px; border-radius: 0; box-shadow: none; margin-bottom: 1rem; }
+
+  /* Title and meta */
+  .recipe-page h1 { font-size: 20pt; margin-bottom: 0.25rem; }
+  .recipe-meta { font-size: 10pt; color: #333; margin-bottom: 0.5rem; }
+  .recipe-description { font-size: 10pt; color: #444; margin-bottom: 1rem; }
+
+  /* Two-column layout stays on print */
+  .recipe-body { display: grid; grid-template-columns: 1fr 2fr; gap: 1.5rem; }
+
+  /* Ingredient & instruction cards — no shadow, no background */
+  .ingredients, .instructions { background: none; box-shadow: none; padding: 0; border-radius: 0; }
+  .ingredients h2, .instructions h2 { font-size: 13pt; border-bottom: 1pt solid #999; padding-bottom: 3pt; margin-bottom: 6pt; }
+  .ingredients h3 { font-size: 11pt; margin: 8pt 0 3pt; }
+
+  /* Checkboxes — hide the JS-added checkboxes when printing */
+  .ingredient-check { display: none; }
+  .ingredients li.checked .ingredient-label { opacity: 1; text-decoration: none; }
+
+  /* Don't break ingredients or steps across pages */
+  .ingredients, .instructions { page-break-inside: avoid; }
+  li { page-break-inside: avoid; }
+
+  /* Page URL/date printed by browser — suppress */
+  @page { margin: 1.5cm; }
+}
 
 /* ── Responsive — Tablet (≤900px) ── */
 @media (max-width: 900px) {

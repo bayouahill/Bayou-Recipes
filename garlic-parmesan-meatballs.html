@@ -7,6 +7,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/scaler.js" defer></script>
+  <script src="js/checklist.js" defer></script>
 </head>
 <body>
   <header>
@@ -28,6 +29,8 @@
       <span>Serves: 4</span>
     </div>
 
+    <a href="#recipe" class="btn-jump">↓ Jump to Recipe</a>
+
     <div class="scaler">
       <span class="scaler-label">Servings:</span>
       <button class="scaler-btn" id="scaler-decrease" aria-label="Decrease servings">−</button>
@@ -41,7 +44,7 @@
 
     <p class="recipe-description">"The ultimate cosy, creamy, garlicky dinner that feels indulgent but is still easy enough for a weeknight. Juicy chicken meatballs infused with herbs and cheese, simmered in a rich, silky one-pan orzo sauce."</p>
 
-    <section class="recipe-body">
+    <section class="recipe-body" id="recipe">
       <div class="ingredients">
         <h2>Ingredients</h2>
         <h3>Meatballs</h3>
@@ -92,7 +95,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2026 RecipeSite</p>
+    <p>&copy; 2026 Bayou Recipes</p>
   </footer>
 </body>
 </html>

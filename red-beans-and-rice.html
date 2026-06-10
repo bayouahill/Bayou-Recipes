@@ -7,6 +7,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/scaler.js" defer></script>
+  <script src="js/checklist.js" defer></script>
 </head>
 <body>
   <header>
@@ -29,6 +30,8 @@
       <span>Serves: 8</span>
     </div>
 
+    <a href="#recipe" class="btn-jump">↓ Jump to Recipe</a>
+
     <div class="scaler">
       <span class="scaler-label">Servings:</span>
       <button class="scaler-btn" id="scaler-decrease" aria-label="Decrease servings">−</button>
@@ -42,7 +45,7 @@
 
     <p class="recipe-description">"A true Louisiana staple. Perfectly creamy, deeply savory red beans simmered low and slow with the holy trinity of vegetables, a smoky ham hock, and deeply browned Andouille sausage."</p>
 
-    <section class="recipe-body">
+    <section class="recipe-body" id="recipe">
       <div class="ingredients">
         <h2>Ingredients</h2>
         <h3>Aromatics &amp; Meat</h3>
@@ -98,7 +101,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2026 RecipeSite</p>
+    <p>&copy; 2026 Bayou Recipes</p>
   </footer>
 </body>
 </html>
